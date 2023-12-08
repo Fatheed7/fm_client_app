@@ -18,7 +18,7 @@ async function loadSeedData() {
             return JSON.parse(seedData);
         }
 
-        const response = await fetch('../assets/data/roles.json');
+        const response = await fetch('./assets/data/roles.json');
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
